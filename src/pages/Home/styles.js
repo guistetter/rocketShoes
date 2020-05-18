@@ -33,7 +33,7 @@ export const ProductList = styled.ul`
       border: 0;
       border-radius: 4px;
       overflow: hidden;
-      margint-top: auto;
+      margin-top: auto;
       display: flex;
       align-items: center;
       transition: background 0.2s;
