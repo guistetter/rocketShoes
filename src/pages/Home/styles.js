@@ -18,7 +18,7 @@ export const ProductList = styled.ul`
     }
     > strong {
       font-size: 16px;
-      line-heigt: 20px;
+      line-height: 20px;
       color: #333;
       margin-top: 5px;
     }
