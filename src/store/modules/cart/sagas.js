@@ -5,6 +5,7 @@
 
 import { call, put, all, takeLatest, select } from "redux-saga/effects";
 import api from "../../../services/api";
+import { toast } from "react-toastify";
 import { formatPrice } from "../../../utils/format";
 import { addToCartSuccess, updateAmount } from "./actions";
 
@@ -17,7 +18,7 @@ function* addToCart({ id }) {
   const currentAmount = productExists ? productExists.amount : 0;
   const amount = currentAmount + 1;
   if (amount > stockAmount) {
-    console.tron.warn("ERRO");
+    toast.error("Disponibilidade maxima alcancada");
     return;
   }
   if (productExists) {
